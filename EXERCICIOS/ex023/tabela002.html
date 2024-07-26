@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 7px;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        td.num {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!-- 
+    ANATOMIA PARA TABELAS GRANDES
+    TABLE
+        THEAD
+            TR, TD, TH
+        TBODY
+            TR, TD, TH
+        TFOOT
+            TR, TD, TH
+    -->
+
+    <table>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.000</td>
+            </tr>
+            <tr>
+                <td>Minas gerais</td>
+                <td class="num">21.345.222</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">34.789.555</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">11.678.555</td>
+            </tr>
+            <tr>
+                <td>Ceara</td>
+                <td class="num">9.867.675</td>
+            </tr>
+            <tr>
+                <td>Para</td>
+                <td class="num">45.553.444</td>
+            </tr>
+            <tr>
+                <td>goias</td>
+                <td class="num">07.888.909</td>
+            </tr>
+            <tr>
+                <td>espirito santo</td>
+                <td class="num">23.444.444</td>
+            </tr>
+            <tr>
+                <td>rio grande do sul</td>
+                <td class="num">34.555.666</td>
+            </tr>
+            <tr>
+                <td>rio grande do norte</td>
+                <td class="num">12.333.222</td>
+            </tr>
+            <tr>
+                <td>piaui</td>
+                <td class="num">22.333.444</td>
+            </tr>
+            <tr>
+                <td>distrito federal</td>
+                <td class="num">78.888.888</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total de habitantes</th>
+                <td class="num"><strong>210.414.343</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
