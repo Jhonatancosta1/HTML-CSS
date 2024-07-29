@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -19,20 +20,35 @@
             padding: 7px;
         }
 
-        thead, tfoot {
-            background-color: gray;
-            color: white;
-        }
-
-        td.num {
-            text-align: right;
-        }
-
         caption {
             font-size: 1.5em;
             font-weight: bold;
             padding: 10px;
             background-color: lightgrey;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: #383838;
+        }
+
+        tbody > tr:nth-child(odd) { /* 2n-1*/
+            background-color: white;
+            font-weight: bold;
+        }
+        tbody > tr:nth-child(even) { /* 2n*/
+            background-color: lightgray;
+            text-decoration: underline;
+        }
+
+        td.num {
+            text-align: right;
         }
     </style>
 </head>
@@ -107,6 +123,54 @@
                 <td>distrito federal</td>
                 <td class="num">78.888.888</td>
             </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.000</td>
+            </tr>
+            <tr>
+                <td>Minas gerais</td>
+                <td class="num">21.345.222</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">34.789.555</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">11.678.555</td>
+            </tr>
+            <tr>
+                <td>Ceara</td>
+                <td class="num">9.867.675</td>
+            </tr>
+            <tr>
+                <td>Para</td>
+                <td class="num">45.553.444</td>
+            </tr>
+            <tr>
+                <td>goias</td>
+                <td class="num">07.888.909</td>
+            </tr>
+            <tr>
+                <td>espirito santo</td>
+                <td class="num">23.444.444</td>
+            </tr>
+            <tr>
+                <td>rio grande do sul</td>
+                <td class="num">34.555.666</td>
+            </tr>
+            <tr>
+                <td>rio grande do norte</td>
+                <td class="num">12.333.222</td>
+            </tr>
+            <tr>
+                <td>piaui</td>
+                <td class="num">22.333.444</td>
+            </tr>
+            <tr>
+                <td>distrito federal</td>
+                <td class="num">78.888.888</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
@@ -115,5 +179,13 @@
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam iure ut architecto labore provident cumque cum repellendus qui culpa placeat, neque praesentium in, non at consequuntur, commodi accusamus illo accusantium!Loremlore Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste recusandae ipsam, fugit voluptatum a libero obcaecati quaerat cumque nesciunt numquam, dolore distinctio nobis ab pariatur. Hic vero iure assumenda aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae facere saepe exercitationem ut consectetur, debitis doloremque totam sed qui eius modi aliquam officiis nulla non error, cumque iste possimus dicta! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum laudantium animi at nesciunt magni nemo qui quae aut eveniet fugit? Minima id obcaecati corrupti ipsam ad error aliquam ea consequuntur?
+    </p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam iure ut architecto labore provident cumque cum repellendus qui culpa placeat, neque praesentium in, non at consequuntur, commodi accusamus illo accusantium!Loremlore Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste recusandae ipsam, fugit voluptatum a libero obcaecati quaerat cumque nesciunt numquam, dolore distinctio nobis ab pariatur. Hic vero iure assumenda aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae facere saepe exercitationem ut consectetur, debitis doloremque totam sed qui eius modi aliquam officiis nulla non error, cumque iste possimus dicta! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum laudantium animi at nesciunt magni nemo qui quae aut eveniet fugit? Minima id obcaecati corrupti ipsam ad error aliquam ea consequuntur?
+    </p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam iure ut architecto labore provident cumque cum repellendus qui culpa placeat, neque praesentium in, non at consequuntur, commodi accusamus illo accusantium!Loremlore Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste recusandae ipsam, fugit voluptatum a libero obcaecati quaerat cumque nesciunt numquam, dolore distinctio nobis ab pariatur. Hic vero iure assumenda aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae facere saepe exercitationem ut consectetur, debitis doloremque totam sed qui eius modi aliquam officiis nulla non error, cumque iste possimus dicta! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum laudantium animi at nesciunt magni nemo qui quae aut eveniet fugit? Minima id obcaecati corrupti ipsam ad error aliquam ea consequuntur?
+    </p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam iure ut architecto labore provident cumque cum repellendus qui culpa placeat, neque praesentium in, non at consequuntur, commodi accusamus illo accusantium!Loremlore Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste recusandae ipsam, fugit voluptatum a libero obcaecati quaerat cumque nesciunt numquam, dolore distinctio nobis ab pariatur. Hic vero iure assumenda aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae facere saepe exercitationem ut consectetur, debitis doloremque totam sed qui eius modi aliquam officiis nulla non error, cumque iste possimus dicta! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum laudantium animi at nesciunt magni nemo qui quae aut eveniet fugit? Minima id obcaecati corrupti ipsam ad error aliquam ea consequuntur?
+    </p>
 </body>
 </html>
